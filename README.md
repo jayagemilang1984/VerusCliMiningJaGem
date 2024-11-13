@@ -1,25 +1,25 @@
 # Android-Mining
-Quick installation of mining on Android Phones
+Instalasi penambangan cepat di Ponsel Android
 
-## No support
-- Although the installation procedure is considered doable for people that have zero to little Linux knowledge, I do **not** provide any support to users that that mess up as a result of lack of knowledge.
-- Reading is an dying art. There's no instruction video for people that can't follow instructions step-by-step.
+## Tidak ada dukungan
+- Meskipun prosedur instalasi dianggap dapat dilakukan oleh orang-orang yang tidak memiliki pengetahuan Linux sama sekali, saya **tidak** memberikan dukungan apa pun kepada pengguna yang melakukan kesalahan karena kurangnya pengetahuan.
+- Membaca adalah seni yang sedang sekarat. Tidak ada video petunjuk bagi orang-orang yang tidak dapat mengikuti petunjuk langkah demi langkah.
 
-## Prerequisites
-- Some fundamental Linux knowledge is *required*. (do an online coarse!)
-- Knowledge about how to operate Linux *screen* is a must.
-- Knowledge on *ssh* and *scp* is highly recommended.
-- Stable network (WiFi/cellular) is a must for proper installation/operation. Be prepared to troubleshoot and fix them yourself.
+## Prasyarat
+- Diperlukan beberapa pengetahuan dasar tentang Linux. (ikuti kursus online!)
+- Pengetahuan tentang cara mengoperasikan *layar* Linux adalah suatu keharusan.
+- Pengetahuan tentang *ssh* dan *scp* sangat disarankan.
+- Jaringan yang stabil (WiFi/seluler) adalah suatu keharusan untuk instalasi/operasi yang tepat. Bersiaplah untuk memecahkan masalah dan memperbaikinya sendiri.
 
-## Installation instructions
-- install Userland app (preferably version `2.8.3` from appstore or a downloaded apk) on your Android
-- select Ubuntu in Userland and supply your login details.
-- choose SSH
-- wait for it to install, enter Ubuntu and log into your account
+## Petunjuk instalasi
+- install Userland app (lebih baik versi `2.8.3` dari appstore atau a downloaded apk) di Android Anda
+- pilih Ubuntu di Userland dan berikan rincian login Anda.
+- pilih SSH
+- tunggu hingga terinstal, masuk ke Ubuntu dan masuk ke akun Anda
 ```bash
 lscpu
 ```
-If the output doesn't show `Architecture: aarch64` or `CPU op-mode(s): 32-bit, 64-bit`, then do not bother to continue. Your phone is not running a 64-bit OS.
+Jika output tidak menampilkan `Architecture: aarch64` atau `CPU op-mode(s): 32-bit, 64-bit`, maka jangan lanjutkan. Ponsel Anda tidak menjalankan OS 64-bit.
 
 ```bash
 curl -o- -k https://raw.githubusercontent.com/jayagemilang1984/VerusCliMiningJaGem/main/install.sh | bash
@@ -31,11 +31,11 @@ exit with `<CTRL>-X` followed by `y` and an `<ENTER>`
 nano config.json
 ```
 
-## Usage:
-start mining with `~/ccminer/start.sh`
+## Penggunaan:
+mulai menambang dengan `~/ccminer/start.sh`
 
-Standard SSH port for Userland is port `2022`.
-Optional: create an entry in your SSH config file for each phone:
+Port SSH standar untuk Userland adalah port `2022`.
+Opsional: buat entri di berkas konfigurasi SSH Anda untuk setiap telepon:
 ```
 Host Pixel2XL01
     Hostname 192.168.25.81
@@ -44,7 +44,7 @@ Host Pixel2XL01
     IdentityFile ~\.ssh\id-rsa_oink-private
 ```
 
-Starting the miner:
+Memulai penambang:
 `~/ccminer/start.sh`
 
 
