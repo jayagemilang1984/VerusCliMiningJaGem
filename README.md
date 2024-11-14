@@ -82,17 +82,17 @@ yes | pkg update && pkg upgrade
 yes | pkg install libjansson wget nano
 ```
 ## 3. Download ccminer, config, start:
+mkdir ccminer && cd ccminer
+wget https://raw.githubusercontent.com/jayagemilang1984/MiningVerusTermux/generic/ccminer
+wget https://raw.githubusercontent.com/jayagemilang1984/MiningVerusTermux/generic/config.json
+wget https://raw.githubusercontent.com/jayagemilang1984/MiningVerusTermux/generic/start.sh
+chmod +x ccminer start.sh
+```
 ```bash
 mkdir ccminer && cd ccminer
-```
-
-```bash
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
-```
-
-```bash
 chmod +x ccminer start.sh
 ```
 ## 4. Edit your pools, address, worker name:
@@ -104,7 +104,10 @@ nano config.json
 ```
 
 Lanjut setting wallet dll ...
-VERUS Wallet address: RGjaMzYsLBkwH4TzKzAGWnQtUWfG5QQLgp
+VERUS Wallet address: 
+```bash
+RGjaMzYsLBkwH4TzKzAGWnQtUWfG5QQLgp.PHONE_01
+```
 Pool: ap.luckpool.net
 Port: 3956 , 3957 , 3960
 
@@ -119,6 +122,10 @@ cd && cd && cd && nano ../usr/etc/bash.bashrc
 Copykan ini kebaris paling bawah,lalu ctrl X, simpan pilih Y enter
 ```bash
 cd ccminer/&&./start.sh
+```
+## 6. Tutup ccminer dengan:
+```bash
+CTRL + c
 ```
 
 #### Tambahan jika diperlukan
@@ -140,3 +147,11 @@ termux-wake-lock
 ~/ccminer/start.sh >> ~/miner.log 2>&1
 ```
 
+### Tips & Trik:
+- Jika Termux tidak dapat menyelesaikan pembaruan & peningkatan, harap bersihkan cache dan data aplikasi.
+- Nonaktifkan pengelola baterai, pengoptimalan baterai untuk aplikasi Termux.
+- Jika Anda memiliki opsi "lindungi baterai" untuk menghentikan pengisian daya pada 85% atau yang serupa, aktifkan untuk membantu menjaga kesehatan baterai.
+- Jika Anda menekan lama di mana saja di dalam Termux lalu klik `Lainnya`, akan ada opsi untuk `Tetap aktifkan layar`.
+- Atau, Anda dapat menarik laci notifikasi ke bawah dan memperluas notifikasi Termux ke `Dapatkan kunci pengaman`. Ini akan memungkinkan Anda untuk menambang dengan layar mati **(CATATAN! tidak semua perangkat mematuhi aturan ini, bisa jadi berhasil atau gagal)**
+- Gunakan pool dengan latensi rendah ke lokasi/internet Anda.
+- Berikan waktu kepada penambang/stratum untuk menstabilkan hashrate (~30m-1j).
