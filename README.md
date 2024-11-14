@@ -88,9 +88,9 @@ wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
 chmod +x ccminer start.sh
 ```
 ## 4. Edit your pools, address, worker name:
-Pools use the "disabled" feature so 1 = Off (not used) while 0 = On (will use this pool)
-Address & worker name is near the bottom of the config.json in format address here.worker name here
-Optionally can use ccminer api for monitoring
+- Pools use the `"disabled"` feature so `1` = Off (not used) while `0` = On (will use this pool)
+- Address & worker name is near the bottom of the config.json in format `address here.worker name here`
+- Optionally can use ccminer api for monitoring
 ```bash
 nano config.json
 ```
@@ -100,8 +100,8 @@ VERUS Wallet address:
 ```bash
 RGjaMzYsLBkwH4TzKzAGWnQtUWfG5QQLgp.PHONE_01
 ```
-Pool: ap.luckpool.net
-Port: 3956 , 3957 , 3960
+- Pool: ap.luckpool.net
+- Port: 3956 , 3957 , 3960
 
 Setelah mengganti wallet dan port:
 ctrl X, simpan pilih Y enter
