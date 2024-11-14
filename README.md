@@ -1,5 +1,9 @@
 # Android-Mining
 Instalasi penambangan cepat di Ponsel Android
+untuk aplikasi keperluan menambang/mining silahkan buka link dibawah ini:
+```bash
+https://github.com/jayagemilang1984/AppMiningPhone
+```
 
 ## Tidak ada dukungan
 - Meskipun prosedur instalasi dianggap dapat dilakukan oleh orang-orang yang tidak memiliki pengetahuan Linux sama sekali, saya **tidak** memberikan dukungan apa pun kepada pengguna yang melakukan kesalahan karena kurangnya pengetahuan.
