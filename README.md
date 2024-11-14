@@ -73,6 +73,7 @@ yes | pkg update && pkg upgrade
 yes | pkg install libjansson wget nano
 ```
 ## 3. Download ccminer, config, start:
+```bash
 mkdir ccminer && cd ccminer
 wget https://raw.githubusercontent.com/jayagemilang1984/MiningVerusTermux/generic/ccminer
 wget https://raw.githubusercontent.com/jayagemilang1984/MiningVerusTermux/generic/config.json
