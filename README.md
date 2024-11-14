@@ -47,22 +47,13 @@ Host Pixel2XL01
 Memulai penambang:
 `~/ccminer/start.sh`
 
-
-## Github cloning and customizing
-1. clone this repo to your own github account
-2. change the URL on line 14 of the README.md to reflect your own account
-3. change the SSH key on line 10 of `install.sh` to reflect your own SSH key
-4. change lines 15+16 to reflect your own github link (especially line 13!!!)
-5. adjust the `config.json` to your address and mining details.
-6. optional: change the lines 20-21 of your `config.json` to your own LAN IP range.
-
 ## Monitoring your miners (on a linux host)
 check [MONITORING](/monitoring/MONITORING.md).
 
-WARNING: The scripts installs my own public SSH key. You may want to remove that from your `~/.ssh/authorized_keys` file and replace it with your own for passwordless access.
+PERINGATAN: Skrip tersebut memasang kunci SSH publik saya sendiri. Anda mungkin ingin menghapusnya dari `~/.ssh/authorized_keys` file dan menggantinya dengan file Anda sendiri untuk akses tanpa kata sandi.
 
-#### I accept no warranties or liabilities on this repo. It is supplied as a service.
-#### Use at your own risk!!!
+#### Saya tidak menerima jaminan atau kewajiban apa pun atas repo ini. Repo ini disediakan sebagai layanan.
+#### Gunakan dengan risiko Anda sendiri!!!
 
 
 # Termux Mining Auto Start Phone
