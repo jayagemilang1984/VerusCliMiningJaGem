@@ -66,7 +66,7 @@ WARNING: The scripts installs my own public SSH key. You may want to remove that
 
 =================================
 # Termux Mining Auto Start Phone
-1. Download & install latest arm64-v8a:
+## 1. Download & install latest arm64-v8a:
 
 ```bash
 https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_arm64-v8a.apk
@@ -76,27 +76,32 @@ termux-setup-storage
 pkg install root-repo 
 pkg install x11-repo
 ```
-2. Get Termux ready: Type y then enter key in any prompts!
------------------------------------------
+## 2. Get Termux ready: Type y then enter key in any prompts!
+```bash
 yes | pkg update && pkg upgrade
 yes | pkg install libjansson wget nano
-=================================
-3. Download ccminer, config, start:
------------------------------------------
+```
+## 3. Download ccminer, config, start:
+```bash
 mkdir ccminer && cd ccminer
------------------------------------------
+```
+
+```bash
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
------------------------------------------
+```
+
+```bash
 chmod +x ccminer start.sh
-=================================
-4. Edit your pools, address, worker name:
+```
+## 4. Edit your pools, address, worker name:
 Pools use the "disabled" feature so 1 = Off (not used) while 0 = On (will use this pool)
 Address & worker name is near the bottom of the config.json in format address here.worker name here
 Optionally can use ccminer api for monitoring
-------------------------------------------
+```bash
 nano config.json
+```
 
 Lanjut setting wallet dll ...
 VERUS Wallet address: RGjaMzYsLBkwH4TzKzAGWnQtUWfG5QQLgp
@@ -105,9 +110,33 @@ Port: 3956 , 3957 , 3960
 
 Setelah mengganti wallet dan port:
 ctrl X, simpan pilih Y enter
-=================================
-5. Cara setting autorun :
+
+## 5. Cara setting autorun :
+```bash
 cd && cd && cd && nano ../usr/etc/bash.bashrc
+```
 
 Copykan ini kebaris paling bawah,lalu ctrl X, simpan pilih Y enter
+```bash
 cd ccminer/&&./start.sh
+```
+
+#### Tambahan jika diperlukan
+Buka termux
+```bash
+cd ccminer
+```
+
+```bash
+mkdir ~/.termux/boot
+cd ~/.termux/boot
+nano termux.sh
+```
+
+copy script dibawah ini lalu ctrl X, simpan pilih Y enter lalu reboot hp
+```bash
+#!/data/data/com.termux/files/usr/bin/sh
+termux-wake-lock
+~/ccminer/start.sh >> ~/miner.log 2>&1
+```
+
