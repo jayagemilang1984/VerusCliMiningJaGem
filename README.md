@@ -63,3 +63,51 @@ WARNING: The scripts installs my own public SSH key. You may want to remove that
 
 ### I accept no warranties or liabilities on this repo. It is supplied as a service.
 ### Use at your own risk!!!
+
+=================================
+# Termux Mining Auto Start Phone
+1. Download & install latest arm64-v8a:
+
+```bash
+https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_arm64-v8a.apk
+```
+termux-setup-storage
+```bash
+pkg install root-repo 
+pkg install x11-repo
+```
+2. Get Termux ready: Type y then enter key in any prompts!
+-----------------------------------------
+yes | pkg update && pkg upgrade
+yes | pkg install libjansson wget nano
+=================================
+3. Download ccminer, config, start:
+-----------------------------------------
+mkdir ccminer && cd ccminer
+-----------------------------------------
+wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
+wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json
+wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
+-----------------------------------------
+chmod +x ccminer start.sh
+=================================
+4. Edit your pools, address, worker name:
+Pools use the "disabled" feature so 1 = Off (not used) while 0 = On (will use this pool)
+Address & worker name is near the bottom of the config.json in format address here.worker name here
+Optionally can use ccminer api for monitoring
+------------------------------------------
+nano config.json
+
+Lanjut setting wallet dll ...
+VERUS Wallet address: RGjaMzYsLBkwH4TzKzAGWnQtUWfG5QQLgp
+Pool: ap.luckpool.net
+Port: 3956 , 3957 , 3960
+
+Setelah mengganti wallet dan port:
+ctrl X, simpan pilih Y enter
+=================================
+5. Cara setting autorun :
+cd && cd && cd && nano ../usr/etc/bash.bashrc
+
+Copykan ini kebaris paling bawah,lalu ctrl X, simpan pilih Y enter
+cd ccminer/&&./start.sh
