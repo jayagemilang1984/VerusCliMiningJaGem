@@ -145,4 +145,5 @@ Install aplikasi AutoStart Manager (untuk mengaktifkan Termux setelah Reboot/Shu
 - Gunakan pool dengan latensi rendah ke lokasi/internet Anda.
 - Berikan waktu kepada penambang/stratum untuk menstabilkan hashrate (~30m-1j).
 
-# Sawer Ngopi VRSC address: RTAia89pqAkdxydWZeXFDEPYxyPaY1Niku
+### Sawer Ngopi VRSC address:
+RTAia89pqAkdxydWZeXFDEPYxyPaY1Niku
