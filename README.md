@@ -62,20 +62,24 @@ PERINGATAN: Skrip tersebut memasang kunci SSH publik saya sendiri. Anda mungkin 
 
 # Termux Mining Auto Start Phone
 ## 1. Download & install latest arm64-v8a:
+Install latest arm64-v8a Termux: https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_arm64-v8a.apk
 
 ```bash
 https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_arm64-v8a.apk
 ```
-termux-setup-storage
+
+Proceed with installation termux-setup-storage
 ```bash
 pkg install root-repo 
 pkg install x11-repo
 ```
+
 ## 2. Get Termux ready: Type y then enter key in any prompts!
 ```bash
 yes | pkg update && pkg upgrade
 yes | pkg install libjansson wget nano
 ```
+
 ## 3. Download ccminer, config, start:
 ```bash
 mkdir ccminer && cd ccminer
@@ -110,7 +114,7 @@ cd ~/.termux/boot
 nano termux.sh
 ```
 
-copy script dibawah ini lalu ctrl X, simpan pilih Y enter lalu reboot hp
+copy script dibawah ini lalu ctrl X, simpan pilih Y enter
 ```bash
 #!/data/data/com.termux/files/usr/bin/sh
 termux-wake-lock
@@ -127,10 +131,9 @@ Copykan ini kebaris paling bawah,lalu ctrl X, simpan pilih Y enter
 cd ccminer/&&./start.sh
 ```
 
-## 6. Tutup ccminer dengan:
-```bash
-CTRL + c
-```
+## 6. Selesai Instal Termux dan CCminer Silahkan Exit Termux
+Buka kembali Termux apakah sudah Autorun atau belum, jika belum silahkan hapus data didalam termux dan ulangi kembali settingannya.
+## 7. Instal Aplikasi Autorun App
 
 ### Tips & Trik:
 - Jika Termux tidak dapat menyelesaikan pembaruan & peningkatan, harap bersihkan cache dan data aplikasi.
