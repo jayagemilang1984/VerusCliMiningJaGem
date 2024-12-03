@@ -113,16 +113,6 @@ Copykan ini kebaris paling bawah,lalu ctrl X, simpan pilih Y enter
 ```bash
 cd ccminer/&&./start.sh
 ```
-## 6. Tutup ccminer dengan:
-```bash
-CTRL + c
-```
-
-#### Tambahan jika diperlukan
-Buka termux
-```bash
-cd ccminer
-```
 
 ```bash
 mkdir ~/.termux/boot
@@ -135,6 +125,10 @@ copy script dibawah ini lalu ctrl X, simpan pilih Y enter lalu reboot hp
 #!/data/data/com.termux/files/usr/bin/sh
 termux-wake-lock
 ~/ccminer/start.sh >> ~/miner.log 2>&1
+```
+## 6. Tutup ccminer dengan:
+```bash
+CTRL + c
 ```
 
 ### Tips & Trik:
