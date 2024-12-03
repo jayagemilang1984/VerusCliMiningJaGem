@@ -135,7 +135,7 @@ cd ccminer/&&./start.sh
 ## 6. Selesai Instal Termux dan CCminer Silahkan Exit Termux
 Buka kembali Termux apakah sudah Autorun atau belum, jika belum silahkan hapus data didalam termux dan ulangi kembali settingannya.
 ## 7. Instal Aplikasi Autorun App
-
+Install aplikasi AutoStart Manager (untuk mengaktifkan Termux setelah Reboot/Shutdown): https://github.com/jayagemilang1984/AppMiningPhone/raw/refs/heads/main/AutoStart%20App%20Manager_5.1.apk
 ### Tips & Trik:
 - Jika Termux tidak dapat menyelesaikan pembaruan & peningkatan, harap bersihkan cache dan data aplikasi.
 - Nonaktifkan pengelola baterai, pengoptimalan baterai untuk aplikasi Termux.
