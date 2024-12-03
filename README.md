@@ -144,3 +144,5 @@ Install aplikasi AutoStart Manager (untuk mengaktifkan Termux setelah Reboot/Shu
 - Atau, Anda dapat menarik laci notifikasi ke bawah dan memperluas notifikasi Termux ke `Dapatkan kunci pengaman`. Ini akan memungkinkan Anda untuk menambang dengan layar mati **(CATATAN! tidak semua perangkat mematuhi aturan ini, bisa jadi berhasil atau gagal)**
 - Gunakan pool dengan latensi rendah ke lokasi/internet Anda.
 - Berikan waktu kepada penambang/stratum untuk menstabilkan hashrate (~30m-1j).
+
+# Sawer Ngopi VRSC address: RTAia89pqAkdxydWZeXFDEPYxyPaY1Niku
