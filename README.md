@@ -59,6 +59,7 @@ PERINGATAN: Skrip tersebut memasang kunci SSH publik saya sendiri. Anda mungkin 
 #### Saya tidak menerima jaminan atau kewajiban apa pun atas repo ini. Repo ini disediakan sebagai layanan.
 #### Gunakan dengan risiko Anda sendiri!!!
 
+#----------------->>>>>>>>> (*_*) <<<<<<<<<-----------------
 
 # Termux Mining Auto Start Phone
 ## 1. Download & install latest arm64-v8a:
@@ -68,19 +69,19 @@ Install latest arm64-v8a Termux: https://github.com/termux/termux-app/releases/d
 https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_arm64-v8a.apk
 ```
 
-Proceed with installation termux-setup-storage
+Lanjutkan dengan instalasi termux-setup-storage
 ```bash
 pkg install root-repo 
 pkg install x11-repo
 ```
 
-## 2. Get Termux ready: Type y then enter key in any prompts!
+## 2. Salin kode dibawah dan masukkan pada termux lalu tekan Enter
 ```bash
 yes | pkg update && pkg upgrade
 yes | pkg install libjansson wget nano
 ```
 
-## 3. Download ccminer, config, start:
+## 3. Setelah tahap 2 selesai silahkan salin kode dibawah, untuk Download ccminer, config, start:
 ```bash
 mkdir ccminer && cd ccminer
 wget https://raw.githubusercontent.com/jayagemilang1984/MiningVerusTermux/generic/ccminer
@@ -89,7 +90,7 @@ wget https://raw.githubusercontent.com/jayagemilang1984/MiningVerusTermux/generi
 chmod +x ccminer start.sh
 ```
 
-## 4. Edit your pools, address, worker name:
+## 4. Edit pools yang ada di CCminer, address (VERUS Wallet address anda), worker name:
 - Pools use the `"disabled"` feature so `1` = Off (not used) while `0` = On (will use this pool)
 - Address & worker name is near the bottom of the config.json in format `address here.worker name here`
 - Optionally can use ccminer api for monitoring
@@ -98,7 +99,7 @@ nano config.json
 ```
 
 Lanjut setting wallet dll ...
-VERUS Wallet address: 
+Contoh penulisan VERUS Wallet address dan Worker: 
 ```bash
 RW5wL3Qkf6wh4EaV3ekG8CYjpURa2Yyzb1.PHONE_01
 ```
