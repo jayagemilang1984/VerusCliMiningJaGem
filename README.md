@@ -59,7 +59,7 @@ PERINGATAN: Skrip tersebut memasang kunci SSH publik saya sendiri. Anda mungkin 
 #### Saya tidak menerima jaminan atau kewajiban apa pun atas repo ini. Repo ini disediakan sebagai layanan.
 #### Gunakan dengan risiko Anda sendiri!!!
 
-#----------------->>>>>>>>> (*_*) <<<<<<<<<-----------------
+# ----------------->>>>>>>>> (*_*) <<<<<<<<<-----------------
 
 # Termux Mining Auto Start Phone
 ## 1. Download & install latest arm64-v8a:
