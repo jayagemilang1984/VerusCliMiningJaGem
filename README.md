@@ -104,16 +104,6 @@ RW5wL3Qkf6wh4EaV3ekG8CYjpURa2Yyzb1.PHONE_01
 Setelah mengganti wallet dan port:
 ctrl X, simpan pilih Y enter
 
-## 5. Cara setting autorun :
-```bash
-cd && cd && cd && nano ../usr/etc/bash.bashrc
-```
-
-Copykan ini kebaris paling bawah,lalu ctrl X, simpan pilih Y enter
-```bash
-cd ccminer/&&./start.sh
-```
-
 ```bash
 mkdir ~/.termux/boot
 cd ~/.termux/boot
@@ -126,6 +116,17 @@ copy script dibawah ini lalu ctrl X, simpan pilih Y enter lalu reboot hp
 termux-wake-lock
 ~/ccminer/start.sh >> ~/miner.log 2>&1
 ```
+
+## 5. Cara setting autorun :
+```bash
+cd && cd && cd && nano ../usr/etc/bash.bashrc
+```
+
+Copykan ini kebaris paling bawah,lalu ctrl X, simpan pilih Y enter
+```bash
+cd ccminer/&&./start.sh
+```
+
 ## 6. Tutup ccminer dengan:
 ```bash
 CTRL + c
