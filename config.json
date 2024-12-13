@@ -11,14 +11,6 @@
         	"url": "stratum+tcp://us.vipor.net:5040",
 		"timeout": 150
 		"disabled": 1
-	},
-	{
-		"name": "USSE-VIPOR",
-        	"url": "stratum+tcp://usse.vipor.net:5040",
-		"timeout": 150
-		"disabled": 1
-	}
-	],
 	"user": "RGjaMzYsLBkwH4TzKzAGWnQtUWfG5QQLgp.PHONE_01",
 	"pass": "hybrid",
 	"algo": "verus",
